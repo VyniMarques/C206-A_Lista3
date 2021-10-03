@@ -9,5 +9,4 @@ public class Endereco {
         this.bairro = bairro;
         this.num = num;
     }
-
 }

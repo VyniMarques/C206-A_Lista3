@@ -1,19 +1,15 @@
-import java.util.Scanner;
-
 public class Principal {
 
     public static void main(String[] args) {
 
-        Scanner teclado = new Scanner(System.in);
+        Pessoa pessoa = new Pessoa("Vinicius",123456,2);
 
-        String nome;
-        int cpf;
-        int qtdEnd;
+        Endereco end1 = new Endereco("Direita","Centro",151);
+        Endereco end2 = new Endereco("Dois","Monte", 97);
 
-        Pessoa pessoa = new Pessoa(teclado.nextLine(), teclado.nextByte(), teclado.nextByte());
+        pessoa.addEndereco(end1);
+        pessoa.addEndereco(end2);
 
-        Endereco end;
-        
         pessoa.mostraInfo();
 
     }
